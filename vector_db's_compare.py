@@ -15,7 +15,7 @@ Original file is located at
 # import google.protobuf
 # print(google.protobuf.__version__)
 
-!pip install langchain_community pymupdf
+# !pip install langchain_community pymupdf
 from langchain_community.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
@@ -58,7 +58,7 @@ embeddings
 # import os
 # os.kill(os.getpid(), 9)  # force restarts the Colab runtime
 
-!pip install chromadb
+# !pip install chromadb
 from chromadb import Client
 from chromadb.config import Settings
 
@@ -83,7 +83,7 @@ chroma_collection.add(
 
 """# Pinecone Database"""
 
-!pip install pinecone-client==4.0.0
+# !pip install pinecone-client==4.0.0
 
 from pinecone import Pinecone
 
@@ -108,7 +108,7 @@ index.upsert(vectors=pinecone_data)
 
 """# Weviate Database"""
 
-!pip install -U weaviate-client
+# !pip install -U weaviate-client
 
 WEAVIATE_URL="8nzs5auetcay3wetgzuxjw.c0.asia-southeast1.gcp.weaviate.cloud"
 WEAVIATE_API_KEY="T2t0UCtJSlJPemdjcUgyYl9BSDVXNXZIeE9UVURFOHlLNUh6ZjlPWU5OdG9zQnBLVjBQSVJsbmdLMDFjPV92MjAw"
@@ -152,8 +152,8 @@ if weviate_collection.batch.failed_objects:
 
 """# Pg Vector Database"""
 
-!pip install pgvector
-!pip install psycopg[binary]
+# !pip install pgvector
+# !pip install psycopg[binary]
 
 import psycopg
 from pgvector.psycopg import register_vector
