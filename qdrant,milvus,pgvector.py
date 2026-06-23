@@ -9,7 +9,7 @@ Original file is located at
 Load Pdf and split into chunks
 """
 
-!pip install langchain_community pymupdf
+# !pip install langchain_community pymupdf
 from transformers import AutoTokenizer, AutoModel, AutoModelForSeq2SeqLM, pipeline
 from langchain_community.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -43,7 +43,7 @@ embeddings
 
 """Qdrant Database"""
 
-!pip install qdrant-client
+# !pip install qdrant-client
 
 """sudo docker pull qdrant/qdrant
 
@@ -135,9 +135,9 @@ print("\n✅Qdrant Answer:\n", response)
 
 """Milvus"""
 
-!pip uninstall grpcio grpcio-status pymilvus -y
-!pip install grpcio==1.67.1 grpcio-status==1.67.1
-!pip install pymilvus==2.5.0
+# !pip uninstall grpcio grpcio-status pymilvus -y
+# !pip install grpcio==1.67.1 grpcio-status==1.67.1
+# !pip install pymilvus==2.5.0
 
 """wget https://github.com/milvus-io/milvus/releases/download/v2.5.13/milvus-standalone-docker-compose.yml -O docker-compose.yml
 
